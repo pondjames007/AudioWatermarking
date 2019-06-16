@@ -1,3 +1,4 @@
+% Function to find mask
 function MR = find_mask(X,fs)
 
 N=size(X(:),1);
