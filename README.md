@@ -25,28 +25,28 @@ The original soundtrack we used in this project is:
 	Length: 30 seconds
 	Sampling Rate: 44100 (1/s)
 	Frame Length: 512 samples
-	[Original Sound Track](./imsad.wav)
+	[Original Sound Track](https://drive.google.com/file/d/0B_MhQboJITZGRzJiYWYydlZDc2s/view)
 
 The image that we put in:
 	Size: 150*150 pixels
-	![](._images_leo_re.jpg)
+	![](./images_leo_re.jpg)
 
 Frame the audio track and do FFT, and find out the frequency threshold 
 ![](._images_mask_signal.jpg =600x300)
 The red line is the frequency threshold while the blue line is the original frequency. Replace the signal under threshold to the watermark signal.
 
 **Original Frequency Spectrum**
-![](._images_original.jpg = 600x300)
+![](./images_original.jpg = 600x300)
 **Frequency Spectrum after In-audible Removal**
-![](._images_watermarked.jpg =600x300)
+![](./images_watermarked.jpg =600x300)
 
 ## Result
-[Watermarked Sound Track](./masked.wav)
+[Watermarked Sound Track](https://drive.google.com/file/d/0B_MhQboJITZGZml2STNoMlVWRzQ/view)
 
 Extracted Information (Image)
-![](._images_extracted.jpg)
+![](./images_extracted.jpg)
 Store more bits in one “slot” of frequency:
-![](._images_extracted4bit.jpg) 
+![](./images_extracted4bit.jpg) 
 
 The reconstructed image would inevitably follow with some noise due to the translation loss of doing FFT and IFFT. Moreover, the number of bit in frequency replacement will influence the result.
 
