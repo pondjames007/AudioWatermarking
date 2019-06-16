@@ -9,8 +9,9 @@ A “weak” sound is difficult to be heard while a “strong” sound is also b
 
 * Temporal Masking - Amplitude (Volume)
 * Frequency Masking - Amplitude in Frequency
-<img src="./images/flow.jpg" width="370" height="270" align="center">
-
+<p align="center">
+  <img src="./images/flow.jpg" width="370" height="270">
+</p>
 
 ## DC Watermarking
 DC Watermarking puts the information into the part of music, where the magnitude is lower than the perceptual threshold of human ears. 
@@ -32,14 +33,20 @@ The image that we put in:
 ![](./images/leo_re.jpg)
 
 Frame the audio track and do FFT, and find out the frequency threshold.<br>
-<img src="./images/mask_signal.jpg" width="600" height="300" align="center"><br>
+<p align="center">
+  <img src="./images/mask_signal.jpg" width="600" height="300">
+</p><br>
 The red line is the frequency threshold while the blue line is the original frequency. Replace the signal under threshold to the watermark signal.
 
 **Original Frequency Spectrum**<br>
-<img src="./images/original.jpg" width="600" height="300" align="center">
+<p align="center">
+  <img src="./images/original.jpg" width="600" height="300">
+</p>
 
 **Frequency Spectrum after In-audible Removal**<br>
-<img src="./images/watermarked.jpg" width="600" height="300" align="center">
+<p align="center">
+  <img src="./images/watermarked.jpg" width="600" height="300">
+</p>
 
 ## Result
 [Watermarked Sound Track](https://drive.google.com/file/d/0B_MhQboJITZGZml2STNoMlVWRzQ/view)
