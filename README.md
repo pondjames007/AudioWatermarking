@@ -10,7 +10,7 @@ A “weak” sound is difficult to be heard while a “strong” sound is also b
 * Temporal Masking - Amplitude (Volume)
 * Frequency Masking - Amplitude in Frequency
 
-![](._images_flow.jpg =370x270)
+![](./images/flow.jpg =370x270)
 
 ## DC Watermarking
 DC Watermarking puts the information into the part of music, where the magnitude is lower than the perceptual threshold of human ears. 
@@ -22,31 +22,31 @@ For Frequency Watermarking, since human ear has limit on distinguishing audio fr
 We implemented **Frequency Watermarking** in this project to achieve our goal.
 
 The original soundtrack we used in this project is:
-	Length: 30 seconds
-	Sampling Rate: 44100 (1/s)
-	Frame Length: 512 samples
-	[Original Sound Track](https://drive.google.com/file/d/0B_MhQboJITZGRzJiYWYydlZDc2s/view)
+    Length: 30 seconds
+    Sampling Rate: 44100 (1/s)
+    Frame Length: 512 samples
+    [Original Sound Track](https://drive.google.com/file/d/0B_MhQboJITZGRzJiYWYydlZDc2s/view)
 
 The image that we put in:
-	Size: 150*150 pixels
-	![](./images_leo_re.jpg)
+    Size: 150*150 pixels
+    ![](./images/leo_re.jpg)
 
-Frame the audio track and do FFT, and find out the frequency threshold 
-![](._images_mask_signal.jpg =600x300)
+Frame the audio track and do FFT, and find out the frequency threshold. 
+![](./images/mask_signal.jpg =600x300)
 The red line is the frequency threshold while the blue line is the original frequency. Replace the signal under threshold to the watermark signal.
 
 **Original Frequency Spectrum**
-![](./images_original.jpg = 600x300)
+![](./images/original.jpg = 600x300)
 **Frequency Spectrum after In-audible Removal**
-![](./images_watermarked.jpg =600x300)
+![](./images/watermarked.jpg =600x300)
 
 ## Result
 [Watermarked Sound Track](https://drive.google.com/file/d/0B_MhQboJITZGZml2STNoMlVWRzQ/view)
 
 Extracted Information (Image)
-![](./images_extracted.jpg)
+![](./images/extracted.jpg)
 Store more bits in one “slot” of frequency:
-![](./images_extracted4bit.jpg) 
+![](./images/extracted4bit.jpg) 
 
 The reconstructed image would inevitably follow with some noise due to the translation loss of doing FFT and IFFT. Moreover, the number of bit in frequency replacement will influence the result.
 
