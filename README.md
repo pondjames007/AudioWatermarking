@@ -24,8 +24,8 @@ We implemented **Frequency Watermarking** in this project to achieve our goal.
 The original soundtrack we used in this project is:
 * Length: 30 seconds
 * Sampling Rate: 44100 (1/s)
-* Frame Length: 512 samples<br>
-[Original Sound Track](https://drive.google.com/file/d/0B_MhQboJITZGRzJiYWYydlZDc2s/view)
+* Frame Length: 512 samples
+* [Original Sound Track](https://drive.google.com/file/d/0B_MhQboJITZGRzJiYWYydlZDc2s/view)
 
 The image that we put in:
 * Size: 150*150 pixels<br>
@@ -37,6 +37,7 @@ The red line is the frequency threshold while the blue line is the original freq
 
 **Original Frequency Spectrum**<br>
 <img src="./images/original.jpg" width="600" height="300" align="center">
+
 **Frequency Spectrum after In-audible Removal**<br>
 <img src="./images/watermarked.jpg" width="600" height="300" align="center">
 
@@ -44,9 +45,9 @@ The red line is the frequency threshold while the blue line is the original freq
 [Watermarked Sound Track](https://drive.google.com/file/d/0B_MhQboJITZGZml2STNoMlVWRzQ/view)
 
 Extracted Information (Image):<br>
-![](./images/extracted.jpg)
+![](./images/extracted.jpg)<br>
 Store more bits in one “slot” of frequency:<br>
-![](./images/extracted4bit.jpg) 
+![](./images/extracted4bit.jpg) <br>
 
 The reconstructed image would inevitably follow with some noise due to the translation loss of doing FFT and IFFT. Moreover, the number of bit in frequency replacement will influence the result.
 
