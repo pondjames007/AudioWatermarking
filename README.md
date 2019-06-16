@@ -32,7 +32,7 @@ The image that we put in:
 ![](./images/leo_re.jpg)
 
 Frame the audio track and do FFT, and find out the frequency threshold.<br>
-<img src="./images/mask_signal.jpg" width="600" height="300" align="center">
+<img src="./images/mask_signal.jpg" width="600" height="300" align="center"><br>
 The red line is the frequency threshold while the blue line is the original frequency. Replace the signal under threshold to the watermark signal.
 
 **Original Frequency Spectrum**<br>
